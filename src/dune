@@ -1,4 +1,5 @@
 (library
  (name CTime)
  (public_name ctime)
- (libraries ctypes.foreign ctypes.top))
+ (libraries ctypes.foreign)
+ (foreign_stubs (language c) (names time)))

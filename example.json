@@ -2,7 +2,8 @@
   "name": "example",
   "esy": {
     "build": "dune build -p #{self.name}",
-    "buildDev": "refmterr dune build -p #{self.name}"
+    "buildDev": "refmterr dune build -p #{self.name}",
+    "install": ["esy-installer example.install"]
   },
   "scripts": {
     "start": "esy '@example' x example"
