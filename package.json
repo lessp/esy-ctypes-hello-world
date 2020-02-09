@@ -1,0 +1,20 @@
+{
+  "name": "ctime",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "buildDev": "refmterr dune build -p #{self.name}"
+  },
+  "dependencies": {
+    "ocaml": "*",
+    "@opam/dune": "*",
+    "@opam/reason": "*",
+    "@opam/ctypes": "*",
+    "@opam/ctypes-foreign": "*"
+  },
+  "devDependencies": {
+    "refmterr": "*"
+  },
+  "resolutions": {
+    "@esy-ocaml/libffi": "esy-ocaml/libffi#c61127d"
+  }
+}

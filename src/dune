@@ -1,0 +1,4 @@
+(library
+ (name CTime)
+ (public_name ctime)
+ (libraries ctypes.foreign ctypes.top))

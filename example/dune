@@ -1,0 +1,5 @@
+(executable
+ (name Example)
+ (package example)
+ (public_name Example)
+ (libraries ctime console.lib))

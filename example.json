@@ -1,0 +1,23 @@
+{
+  "name": "example",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "buildDev": "refmterr dune build -p #{self.name}"
+  },
+  "scripts": {
+    "start": "esy '@example' x example"
+  },
+  "dependencies": {
+    "ocaml": "*",
+    "@opam/dune": "*",
+    "@opam/reason": "*",
+    "ctime": "*"
+  },
+  "devDependencies": {
+    "refmterr": "*",
+    "@reason-native/console": "*"
+  },
+  "resolutions": {
+    "ctime": "link:./package.json"
+  }
+}
